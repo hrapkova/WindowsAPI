@@ -134,6 +134,9 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
             case IDM_ABOUT:
                 DialogBox(hInst, MAKEINTRESOURCE(IDD_ABOUTBOX), hWnd, About);
                 break;
+			case ID_FILE_OPEN:
+				MessageBox(hWnd, L"text", L"title", MB_OK | MB_ICONHAND);
+				break;
             case IDM_EXIT:
                 DestroyWindow(hWnd);
                 break;
